@@ -26,3 +26,20 @@ recipe "chruby::install_2.0",
 
 recipe "chruby::install_2.1",
   "Install and setup ruby 2.1"
+
+
+# == Attributes
+# 
+
+attribute "chruby",
+    :display_name => "utility",
+    :type => "hash"
+
+attribute "chruby/_DEFAULT_VERSION",
+  :display_name => "",
+  :description => "",
+  :default => "1.9",
+  :required => "recommended",
+  :recipes => [
+    "chrubyi::setup_chruby"
+  ]
