@@ -4,5 +4,5 @@ execute "apt-get update" do
 end.run_action(:run) if node['platform'] == "ubuntu"
 
 execute "ruby-install ruby 1.8" do
-        command "ruby-install ruby 1.8"
+        command "/usr/local/bin/ruby-install ruby 1.8"
 end

@@ -4,5 +4,5 @@ execute "apt-get update" do
 end.run_action(:run) if node['platform'] == "ubuntu"
 
 execute "ruby-install ruby 2.0" do
-        command "ruby-install ruby 2.0"
+        command "/usr/local/bin/ruby-install ruby 2.0"
 end
