@@ -41,5 +41,5 @@ attribute "chruby/_DEFAULT_VERSION",
   :default => "1.9",
   :required => "recommended",
   :recipes => [
-    "chrubyi::setup_chruby"
+    "chruby::setup_chruby"
   ]
